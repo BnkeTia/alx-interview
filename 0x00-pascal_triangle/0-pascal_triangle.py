@@ -11,7 +11,7 @@ def pascal_triangle(n):
     # initialize list
     triangle = []
     # check if n is zero or negative number
-    if n <= 0;
+    if n <= 0:
         return triangle
 
     # iterate through n initialize list to store number
