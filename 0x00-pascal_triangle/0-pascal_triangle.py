@@ -1,4 +1,4 @@
-#!/bin/python3
+#!/usr/bin/python3
 """A function that returns the list of integers representing the
 pascals triangle
 """
