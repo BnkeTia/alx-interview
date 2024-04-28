@@ -1,4 +1,12 @@
+#!/bin/python3
+"""A function that returns the list of integers representing the
+pascals triangle
+"""
+
+
 def pascal_triangle(n):
+    """initializing variables"""
+
     if n <= 0:
         return []
 
