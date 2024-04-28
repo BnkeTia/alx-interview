@@ -7,7 +7,6 @@ pascals triangle
 def pascal_triangle(n):
     """A module that returns a list of integers."""
 
-    
     # initialize list
     triangle = []
     # check if n is zero or negative number
