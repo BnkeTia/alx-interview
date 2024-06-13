@@ -1,5 +1,7 @@
 # 0x07. Rotate 2D Matrix
 `Algorithm` `Python`
+![2d matrix](https://www.google.com/imgres?q=2D%20matrix%20rotate&imgurl=https%3A%2F%2Fassets.leetcode.com%2Fuploads%2F2020%2F08%2F28%2Fmat2.jpg&imgrefurl=https%3A%2F%2Fleetcode.com%2Fproblems%2Frotate-image%2F&docid=j57Tg-Y0JIGfqM&tbnid=mbZ6P4_POQNURM&vet=12ahUKEwihyo2UqtmGAxXFZ0EAHdUyDfwQM3oECHgQAA..i&w=802&h=322&hcb=2&ved=2ahUKEwihyo2UqtmGAxXFZ0EAHdUyDfwQM3oECHgQAA)
+
 ## Requirements
 ### General
 * Allowed editors: `vi`, `vim`, `emacs`
