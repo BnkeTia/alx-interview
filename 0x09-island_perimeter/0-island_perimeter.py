@@ -1,25 +1,24 @@
+#!/usr/bin/python3
+"""Module containing function that computes"""
+
+
 def island_perimeter(grid):
-    """
-    Calculate the perimeter of the island in the grid.
-    :param grid: List[List[int]] - 2D list representing the grid
-    :return: int - perimeter of the island
-    """
-    if not grid or not grid[0]:
-        return 0
+    """Function that returns the perimeter of an island"""
 
-    rows, cols = len(grid), len(grid[0])
-    perimeter = 0
+    def count_horizontal_edges(matrix):
+        """Function to return number of edges along horizontal direction"""
 
-    for r in range(rows):
-        for c in range(cols):
-            if grid[r][c] == 1:
-                perimeter += 4  # Start with 4 sides for each land cell
+        count = 0
+        for row in matrix:
+            row = [0] + row + [0]
+            for i in range(1, len(row)):
+                count += row[i] != row[i-1]
+        return count
 
-                # Check if the cell has neighboring land cells and adjust the perimeter
-                if r > 0 and grid[r - 1][c] == 1:  # Top
-                    perimeter -= 2  # Remove 2 sides
+    transposed_grid = [[] for _ in range(len(grid[0]))]
+    for row in grid:
+        for i, item in enumerate(row):
+            transposed_grid[i].append(item)
 
-                if c > 0 and grid[r][c - 1] == 1:  # Left
-                    perimeter -= 2  # Remove 2 sides
-
-    return perimeter
+    return count_horizontal_edges(
+            grid) + count_horizontal_edges(transposed_grid)
